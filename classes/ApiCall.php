@@ -1,9 +1,14 @@
 <?php
+
 if(!class_exists("ApiCall")){
 
 	class ApiCall{
 
-		private $key = "YOUR API KEY HERE";
+		private $key;
+
+		public function __construct($key){
+			$this->key = $key;
+		}
 
 		public function makeCall($city,$units,$url){
 
