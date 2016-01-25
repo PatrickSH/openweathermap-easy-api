@@ -1,5 +1,4 @@
 <?php
-
 if(!class_exists("ApiCall")){
 
 	class ApiCall{
